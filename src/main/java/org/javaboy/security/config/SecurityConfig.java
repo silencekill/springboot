@@ -20,7 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     // 添加设置用户名密码和角色
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        //配置用户名密码
+        //配置用户名密码角色
         auth.inMemoryAuthentication()
                 .withUser("javaboy").password("123").roles("admin")
                 .and()
