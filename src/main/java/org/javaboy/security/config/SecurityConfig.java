@@ -68,7 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 表单登录
                 .formLogin()
                 .loginProcessingUrl("/doLogin")
-                // 设置默认的登录页面  /一定要加上
+                // 设置默认的登录页面  '/'一定要加上
                 //登录配置
                 .loginPage("/login")
                 //定义用户名的属性（key）,传递的参数的key为uname
